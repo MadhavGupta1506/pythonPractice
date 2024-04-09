@@ -5,4 +5,4 @@ for i in range(len(a)):
     for j in range(len(b)):
         cartesian.append((a[i],b[j]))
 for i in cartesian:
-    print(iend="")
+    print(i,end=" ")

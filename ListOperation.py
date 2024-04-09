@@ -1,0 +1,20 @@
+n=input()
+i=0
+List1=[]
+while(i!=n):
+    i+=1
+    StringList=input().split()
+    if(StringList[0]=="insert"):
+        List1.insert(int(StringList[1]),int(StringList[2]))
+    elif(StringList[0]=="delete"):
+        List1.remove(int(StringList[1]))
+    elif(StringList[0]=="pop"):
+        List1.pop()
+    elif(StringList[0]=="append"):
+        List1.append(int(StringList[1]))
+    elif(StringList[0]=="sort"):
+        List1.sort()
+    elif(StringList[0]=="print"):
+        print(List1)
+    elif(StringList[0]=="reverse"):
+        List1.reverse()

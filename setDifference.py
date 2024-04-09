@@ -1,0 +1,7 @@
+englishCount=int(input())
+englishRollNo=input().split(" ")
+frenchCount=int(input())
+frenchRollNo=input().split(" ")
+englishRollNo,frenchRollNo=set(englishRollNo),set(frenchRollNo)
+total=englishRollNo.difference(frenchRollNo)
+print(len(total))
